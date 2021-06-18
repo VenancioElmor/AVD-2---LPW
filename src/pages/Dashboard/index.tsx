@@ -73,6 +73,9 @@ const Dashboard: React.FC = () => {
           campeao: response.data.campeao,
         };
         setCampeoes([...campeoes, novoCampeao]);
+        setAno('');
+        setSede('');
+        setCampeao('');
       })
       .catch((error: AxiosError) => {
         console.log(error);
